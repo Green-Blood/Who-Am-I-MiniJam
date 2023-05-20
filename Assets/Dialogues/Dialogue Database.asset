@@ -60,7 +60,7 @@ MonoBehaviour:
   - id: 2
     fields:
     - title: Name
-      value: Manticora
+      value: Manticore
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -373,7 +373,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 295.38474
-        y: 228.8461
+        y: 227.88458
         width: 160
         height: 30
     - id: 3
@@ -484,8 +484,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 63.65383
-        y: 287.5
+        x: 62.6923
+        y: 289.42307
         width: 160
         height: 30
     - id: 5
@@ -532,6 +532,12 @@ MonoBehaviour:
         originDialogueID: 5
         destinationConversationID: 1
         destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      - originConversationID: 1
+        originDialogueID: 5
+        destinationConversationID: 1
+        destinationDialogueID: 7
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -594,9 +600,60 @@ MonoBehaviour:
         y: 387.5
         width: 160
         height: 30
+    - id: 7
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Nooooooo
+
+'
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 258.703
+        y: 369.773
+        width: 160
+        height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1.04
+    canvasZoom: 0.992493
   - id: 2
     fields:
     - title: Title
