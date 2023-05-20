@@ -460,7 +460,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: '{{default}};
+
+          SetPanel(Manticore, 2)'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
