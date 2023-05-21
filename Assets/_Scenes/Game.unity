@@ -629,7 +629,7 @@ MonoBehaviour:
   alternateAudioClips: []
   audioSource: {fileID: 0}
   usePlayOneShot: 0
-  interruptAudioClip: 0
+  interruptAudioClip: 1
   stopAudioOnSilentCharacters: 0
   stopAudioOnPauseCodes: 0
   silentCharacters: 
@@ -952,6 +952,134 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &165778976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 165778978}
+  - component: {fileID: 165778977}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &165778977
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165778976}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 03bf7a7f2454a45169ea11dea523b097, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &165778978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165778976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &193075282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1228,6 @@ MonoBehaviour:
   pcImage: {fileID: 563735988}
   pcName:
     m_uiText: {fileID: 1498795055}
-    m_textMeshProUGUI: {fileID: 0}
   usePortraitNativeSize: 0
   timerSlider: {fileID: 132758932}
   buttonAlignment: 0
@@ -1532,7 +1659,6 @@ MonoBehaviour:
   pcImage: {fileID: 557590527}
   pcName:
     m_uiText: {fileID: 476054053}
-    m_textMeshProUGUI: {fileID: 0}
   usePortraitNativeSize: 0
   timerSlider: {fileID: 193075284}
   buttonAlignment: 0
@@ -1765,7 +1891,6 @@ MonoBehaviour:
     panel: {fileID: 1938423080}
     alertText:
       m_uiText: {fileID: 1168815442}
-      m_textMeshProUGUI: {fileID: 0}
     queueAlerts: 1
     dontQueueDuplicates: 0
     waitForHideAnimation: 1
@@ -2680,32 +2805,32 @@ PrefabInstance:
     - target: {fileID: 295518693203077267, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 295518693203077267, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 295518693203077267, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.6156863
       objectReference: {fileID: 0}
     - target: {fileID: 416854541920189218, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 416854541920189218, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 416854541920189218, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.6156863
       objectReference: {fileID: 0}
     - target: {fileID: 2479835396657167046, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
@@ -2815,32 +2940,32 @@ PrefabInstance:
     - target: {fileID: 4669305421420824187, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 4669305421420824187, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 4669305421420824187, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.6156863
       objectReference: {fileID: 0}
     - target: {fileID: 6054077480546434743, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3066038
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 6054077480546434743, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 6054077480546434743, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.9583242
+      value: 0.6156863
       objectReference: {fileID: 0}
     - target: {fileID: 6842460652312351688, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
@@ -2855,52 +2980,52 @@ PrefabInstance:
     - target: {fileID: 6934982480248917836, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: conversation
-      value: Room Conversation
+      value: Banshee Room Conversation
       objectReference: {fileID: 0}
     - target: {fileID: 7322211402377485014, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 7322211402377485014, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 7322211402377485014, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.6156863
       objectReference: {fileID: 0}
     - target: {fileID: 7597904211975893784, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 7597904211975893784, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 1
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 7597904211975893784, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
+      value: 0.6156863
       objectReference: {fileID: 0}
     - target: {fileID: 8661046206070144306, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 8661046206070144306, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.039215688
       objectReference: {fileID: 0}
     - target: {fileID: 8661046206070144306, guid: 725387e36f5e2448da333a085ebf89f6,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.6156863
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4275,10 +4400,8 @@ MonoBehaviour:
   portraitImage: {fileID: 98731113}
   portraitName:
     m_uiText: {fileID: 1871401192}
-    m_textMeshProUGUI: {fileID: 0}
   subtitleText:
     m_uiText: {fileID: 476008192}
-    m_textMeshProUGUI: {fileID: 0}
   addSpeakerName: 0
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
@@ -6050,10 +6173,8 @@ MonoBehaviour:
   portraitImage: {fileID: 1134859288}
   portraitName:
     m_uiText: {fileID: 1659654021}
-    m_textMeshProUGUI: {fileID: 0}
   subtitleText:
     m_uiText: {fileID: 476008192}
-    m_textMeshProUGUI: {fileID: 0}
   addSpeakerName: 0
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
@@ -7087,10 +7208,8 @@ MonoBehaviour:
   panel: {fileID: 1456384243}
   label:
     m_uiText: {fileID: 2072760748}
-    m_textMeshProUGUI: {fileID: 0}
   inputField:
     m_uiInputField: {fileID: 1196915876}
-    m_textMeshProInputField: {fileID: 0}
   acceptKey: 13
   acceptButton: 
   cancelKey: 27
@@ -7727,7 +7846,6 @@ MonoBehaviour:
   button: {fileID: 1448966042}
   label:
     m_uiText: {fileID: 220229592}
-    m_textMeshProUGUI: {fileID: 0}
   setLabelColor: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &1448966041
@@ -8572,10 +8690,8 @@ MonoBehaviour:
   panel: {fileID: 1493413711}
   label:
     m_uiText: {fileID: 788685660}
-    m_textMeshProUGUI: {fileID: 0}
   inputField:
     m_uiInputField: {fileID: 1229782055}
-    m_textMeshProInputField: {fileID: 0}
   acceptKey: 13
   acceptButton: 
   cancelKey: 27
@@ -9615,7 +9731,6 @@ MonoBehaviour:
     panel: {fileID: 1109168290}
     alertText:
       m_uiText: {fileID: 1979106162}
-      m_textMeshProUGUI: {fileID: 0}
     queueAlerts: 1
     dontQueueDuplicates: 0
     waitForHideAnimation: 1
@@ -9947,10 +10062,8 @@ MonoBehaviour:
   portraitImage: {fileID: 347336630}
   portraitName:
     m_uiText: {fileID: 1943061785}
-    m_textMeshProUGUI: {fileID: 0}
   subtitleText:
     m_uiText: {fileID: 476008192}
-    m_textMeshProUGUI: {fileID: 0}
   addSpeakerName: 0
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
@@ -10588,10 +10701,8 @@ MonoBehaviour:
   portraitImage: {fileID: 154953717}
   portraitName:
     m_uiText: {fileID: 41549602}
-    m_textMeshProUGUI: {fileID: 0}
   subtitleText:
     m_uiText: {fileID: 476008192}
-    m_textMeshProUGUI: {fileID: 0}
   addSpeakerName: 0
   addSpeakerNameFormat: '{0}: {1}'
   accumulateText: 0
@@ -10901,7 +11012,6 @@ MonoBehaviour:
   button: {fileID: 2009202369}
   label:
     m_uiText: {fileID: 1915113829}
-    m_textMeshProUGUI: {fileID: 0}
   setLabelColor: 1
   defaultColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &2017580767
