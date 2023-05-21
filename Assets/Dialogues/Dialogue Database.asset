@@ -80,10 +80,10 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 21300000, guid: 705a2289efa954c51af4f00f552a46bc, type: 3}
+    spritePortrait: {fileID: 21300000, guid: 074ee7da7f6d64a1c83efd086edc119b, type: 3}
     alternatePortraits: []
     spritePortraits:
-    - {fileID: 21300000, guid: fa491701982bc48e8b2e7a6d3e10f0d3, type: 3}
+    - {fileID: 21300000, guid: 09df880bc0fb430489063b1733c97b11, type: 3}
   - id: 3
     fields:
     - title: Name
@@ -109,9 +109,9 @@ MonoBehaviour:
   - id: 4
     fields:
     - title: Name
-      value: Narator
+      value: Narrator
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -119,7 +119,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: IsPlayer
       value: False
       type: 2
@@ -250,6 +250,12 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
+      - originConversationID: 1
+        originDialogueID: 0
+        destinationConversationID: 1
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -258,7 +264,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 80
-        y: 50
+        y: 48.8201
         width: 160
         height: 30
     - id: 2
@@ -640,15 +646,15 @@ MonoBehaviour:
         destinationDialogueID: 9
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: (Variable["TimesToSpeakToManticore"] == 0)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 513.38806
-        y: 98.10063
+        x: 361.4808
+        y: 56.868927
         width: 160
         height: 30
     - id: 9
@@ -704,8 +710,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 515.41473
-        y: 155.1696
+        x: 600.2129
+        y: 30.128906
         width: 160
         height: 30
     - id: 10
@@ -761,8 +767,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 516.42535
-        y: 222.3503
+        x: 677.05646
+        y: 86.217636
         width: 160
         height: 30
     - id: 11
@@ -818,8 +824,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 519.4519
-        y: 277.4088
+        x: 658.91797
+        y: 148.58699
         width: 160
         height: 30
     - id: 12
@@ -875,8 +881,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 519.4572
-        y: 326.40247
+        x: 644.7104
+        y: 176.73279
         width: 160
         height: 30
     - id: 13
@@ -932,8 +938,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 519.4572
-        y: 376.40247
+        x: 503.40088
+        y: 164.91649
         width: 160
         height: 30
     - id: 14
@@ -988,8 +994,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 519.4572
-        y: 426.40247
+        x: 506.99512
+        y: 153.23534
         width: 160
         height: 30
     - id: 15
@@ -1046,8 +1052,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 519.4572
-        y: 476.40247
+        x: 508.79224
+        y: 187.3802
         width: 160
         height: 30
     - id: 16
@@ -1103,8 +1109,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 517.56036
-        y: 526.40247
+        x: 505.09833
+        y: 214.33662
         width: 160
         height: 30
     - id: 17
@@ -1159,8 +1165,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 517.56036
-        y: 575.45404
+        x: 507.78613
+        y: 255.75543
         width: 160
         height: 30
     - id: 18
@@ -1206,7 +1212,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 18
         destinationConversationID: 1
-        destinationDialogueID: 19
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1216,8 +1222,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 518.5763
-        y: 626.47003
+        x: 509.88104
+        y: 297.95584
         width: 160
         height: 30
     - id: 19
@@ -1265,13 +1271,117 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 518.5763
-        y: 676.47003
+        x: 820.2387
+        y: 349.64316
+        width: 160
+        height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: What's up?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 20
+        destinationConversationID: 1
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
+      conditionsString: (Variable["TimesToSpeakToManticore"] > 0)
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 253.52301
+        y: 180.5549
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Welcome to my chambers
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 357.98108
+        y: 376.41776
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 127.35682}
-    canvasZoom: 0.9842904
+    canvasScrollPosition: {x: 80.16705, y: 0.6992245}
+    canvasZoom: 0.8533815
   - id: 2
     fields:
     - title: Title

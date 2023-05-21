@@ -8395,7 +8395,8 @@ MonoBehaviour:
     customMenuPanel: {fileID: 0}
     customMenuPanelOffset: {x: 0, y: 0, z: 0}
     useMenuPanelFor: 0
-    portraitAnimatorController: {fileID: 0}
+    portraitAnimatorController: {fileID: 9100000, guid: 4780c581384ad334e8ce10c74474d0f7,
+      type: 2}
     setSubtitleColor: 1
     applyColorToPrependedName: 0
     prependActorNameSeparator: ': '
