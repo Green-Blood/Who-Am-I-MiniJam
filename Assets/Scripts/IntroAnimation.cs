@@ -1,6 +1,9 @@
+using System;
 using DG.Tweening;
 using TMPro;
+using UniRx;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class IntroAnimation : MonoBehaviour
@@ -13,6 +16,8 @@ public class IntroAnimation : MonoBehaviour
     [SerializeField] private float introBackImageFadeTime;
     [SerializeField] private float introTextFadeTime;
 
+    private bool _canClick;
+
     private void Awake()
     {
         introText.DOFade(0, 0);
@@ -24,9 +29,19 @@ public class IntroAnimation : MonoBehaviour
             introBackImage.DOFade(0, introBackImageFadeTime).OnComplete((() =>
             {
                 introText.gameObject.SetActive(true);
-                introText.DOFade(1, introTextFadeTime).OnComplete((() => { })).SetLoops(2, LoopType.Yoyo)
+                introText.DOFade(1, introTextFadeTime).OnComplete((() => { })).SetLoops(-1, LoopType.Yoyo)
                     .SetEase(Ease.InOutSine);
+                Observable.Timer(TimeSpan.FromSeconds(introTextFadeTime * 2f)).Subscribe((l =>
+                {
+                    _canClick = true;
+                }));
             }));
         }));
+    }
+
+    private void Update()
+    {
+        if (!_canClick) return;
+        if (Input.anyKeyDown) SceneManager.LoadSceneAsync("Game");
     }
 }
