@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 44612ce3a98ec459f87d070759cd5f1f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - a Agustus Merdeka
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 40a6192e5767747728b6e81397515d28, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
