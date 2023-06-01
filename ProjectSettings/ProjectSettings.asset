@@ -155,7 +155,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: 
-    Standalone: unity.YourCompany.ViNoApp
+    Standalone: com.DefaultCompany.WhoAmI
     iPhone: com.YourCompany.ViNoApp
     tvOS: 
   buildNumber:
