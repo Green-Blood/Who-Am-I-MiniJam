@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 7597904211975893784}
   - component: {fileID: 7894311045664704402}
   - component: {fileID: 4056079201312559024}
+  - component: {fileID: 8344240089131078863}
   m_Layer: 5
   m_Name: Character Room
   m_TagString: Untagged
@@ -5232,7 +5233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hubParticles: {fileID: 7597904211975893784}
-  spotLight: {fileID: 6054077480546434743}
   colorImage: {fileID: 295518693203077267}
   innerVortexImage: {fileID: 416854541920189218}
   outerParticleImage: {fileID: 4669305421420824187}
@@ -5243,9 +5243,22 @@ MonoBehaviour:
   outerParticleRotationDuration: 140
   outLineImageRotationDuration: 60
   innerParticleRotationDuration: 73.2
+--- !u!114 &8344240089131078863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842460652312351688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b82e66b94247e88837fb1b9c833753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   minIntensity: 0.5
   maxIntensity: 1.5
-  animationDuration: 1.5
+  animationDuration: 2
+  spotLight: {fileID: 6054077480546434743}
 --- !u!1 &7518801480248103999
 GameObject:
   m_ObjectHideFlags: 0
