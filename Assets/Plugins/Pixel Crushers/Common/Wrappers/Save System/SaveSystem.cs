@@ -1,5 +1,7 @@
 ﻿// Copyright (c) Pixel Crushers. All rights reserved.
 
+using System;
+using MoreMountains.Tools;
 using UnityEngine;
 
 namespace PixelCrushers.Wrappers
@@ -12,6 +14,7 @@ namespace PixelCrushers.Wrappers
     [AddComponentMenu("Pixel Crushers/Save System/Save System", -1)]
     public class SaveSystem : PixelCrushers.SaveSystem
     {
+        
     }
 
 }
