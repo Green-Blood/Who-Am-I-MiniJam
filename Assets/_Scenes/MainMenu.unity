@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 479786971}
   m_HandleRect: {fileID: 479786970}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2362,6 +2362,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 875227716}
     m_Modifications:
+    - target: {fileID: 729925175932776559, guid: e8ce7e1e313724070ad3c97b0819548c,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1737007546897011626, guid: e8ce7e1e313724070ad3c97b0819548c,
         type: 3}
       propertyPath: m_Sprite
@@ -2757,6 +2762,11 @@ PrefabInstance:
     - target: {fileID: 729925175932776559, guid: e8ce7e1e313724070ad3c97b0819548c,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 729925175932776559, guid: e8ce7e1e313724070ad3c97b0819548c,
+        type: 3}
+      propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939351210788123057, guid: e8ce7e1e313724070ad3c97b0819548c,
@@ -5543,6 +5553,11 @@ PrefabInstance:
     - target: {fileID: 729925175932776559, guid: e8ce7e1e313724070ad3c97b0819548c,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 729925175932776559, guid: e8ce7e1e313724070ad3c97b0819548c,
+        type: 3}
+      propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939351210788123057, guid: e8ce7e1e313724070ad3c97b0819548c,
